@@ -26,7 +26,7 @@
     src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzJX5f-9o1vgP2EXwfjgl7AY.woff2) format('woff2');
     unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
    }
-      html {
+    html {
     font-size: 100%;
     overflow-y: scroll;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -44,8 +44,40 @@
     a:focus { outline: thin dotted; }
     a:hover, a:active { color: #c00; outline: 0; }
     }
-     body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #333; }
+
+    body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #333; }
       body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400;background: #fff; }   
+
+
+footer {
+  padding: 0 0.5em;
+  border-top: 1px solid #ccc;
+}
+footer span { float: right; font-style: italic; }
+footer, .container { max-width: 45em; margin: 0 auto; }
+
+
+b, strong { font-weight: bold; }
+pre, code { font-family: monospace, monospace; font-size: 1em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 20px; }
+img { border: 0; max-width: 100%; }
+
+.hero { padding: 2em; background-color: #f8f8f8; font-size:1.2em;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+
+.content { padding: 1em 1em; }
+.content li { list-style-type: none; font-size: 1.1em;}
+li img { float:left; padding-right: 1em; }
+li p { font-size: 0.9em; font-style: italic; }
+
+/* Smartphones (portrait) */
+@media only screen and (max-width: 480px) {
+  body { font-size: 12px;}
+  header p { padding-left: 4.5em;}
+}
+ 
     </style>
 
     
