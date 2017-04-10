@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+
+		#image {
+			width: 45px;
+			height: 40px;
+			background: url("images/oscar.png");
+			background-position: 0px 0px;
+		}
+
+
+	</style>
+
+	
+</head>
+<body>
+<div id="fpsElement">60 fps</div>
+<p>Test</p>
+
+<div class="wrapper">
+	<div class="ava-wrapper">
+		<img id="avatar" src="images/leoFace.png">
+		<div class = "health-wrapper">
+			<div id="healthBar">
+					<img src="images/heart.png">
+					<img src="images/heart.png">
+					<img src="images/heart.png">
+				</div>
+				<div>
+					<img src="images/coinImg.png">
+					<span id="score">0</span>
+				</div>
+		</div>
+	</div>
+		
+	<div class= "weapon-wrapper">
+		<div class="weapon">
+					<img src="images/malinka.png" width="40" height="40">
+					<span id="ammountOfBullet">30</span>
+		</div>
+		<div class="swipe">
+					<img  src="images/swipeImg.png" width="40" height="40">
+					<span id="ammounOfPowerUp">5</span>
+		</div>
+	</div>
+	<canvas height="500" width="900" style="border:1px solid black" id="canvas"></canvas>
+
+	<div id="gameMessage" class="fullTransitive">
+		<div id="restart">Restart</div>
+		<div id="continue">Continue</div>
+	</div>
+
+	<div id="gameOver" class="fullTransitive">
+		<div class="game-over">Game over</div>
+		<div id="restart">Restart</div>
+		
+	</div>
+
+
+	<div id="victory" class="fullTransitive">
+		<div class="victory">Victory!</div>
+		<div class="victory">Oscar is yours!</div>	
+		
+	</div>
+
+	<div class="bearHelthBlock">
+		<h3>Bear</h3>
+		<div class="bearHealthWrapper"><div id="bearHealth"></div></div>
+	</div>
+</div>
+<div id="image"></div>
+
+
+<audio id='coinSound' >       
+        <source src='sounds/coin.ogg' type='audio/ogg'>
+</audio>
+<audio id='jumpSound' >       
+        <source src='sounds/jump.ogg' type='audio/ogg'>
+</audio>
+<audio id='swipeSound' >       
+        <source src='sounds/boost_forward.ogg' type='audio/ogg'>
+</audio>
+<audio id='failureSound' >       
+        <source src='sounds/failure.ogg' type='audio/ogg'>
+</audio>
+<audio id='getAmmoSound' >       
+        <source src='sounds/award_combo.ogg' type='audio/ogg'>
+</audio>
+
+<audio id='enemyDeathSound' >       
+        <source src='sounds/enemy_squash.ogg' type='audio/ogg'>
+</audio>
+
+<audio id='shootSound' >       
+        <source src='sounds/shoot.ogg' type='audio/ogg'>
+</audio>
+
+<audio id='bossHintSound' >       
+        <source src='sounds/boss_hit.ogg' type='audio/ogg'>
+</audio>
+
+<audio id='bossLaugh' >       
+        <source src='sounds/laughter_8bit.ogg' type='audio/ogg'>
+</audio>
+
+<audio id='soundtrack' >       
+        <source src='sounds/soundtrack.mp3' type='audio/mp3'>
+</audio>
+
+<audio id='bossSoundtrack'>       
+        <source src='sounds/boss.mp3' type='audio/mp3'>
+</audio>
+
+<audio id='victorySound' >       
+        <source src='sounds/victory.mp3' type='audio/mp3'>
+</audio>
+
+<script type="text/javascript" src="MainVars.js"></script>
+
+<script type="text/javascript" src="gameScript.js"></script>
+
+
+
+
+
+
+</body>
+</html>
