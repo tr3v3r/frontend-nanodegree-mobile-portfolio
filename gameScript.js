@@ -2860,8 +2860,9 @@ function calculateFps(now) {
 	return fps;
 }
 
+window.onload = function() {	
 requestAF = requestAnimationFrame(animate);
-
+};
 
 
 function draw(now) {
