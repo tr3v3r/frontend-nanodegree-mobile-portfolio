@@ -315,10 +315,7 @@ retorterSheet.src = "images/reporter.png";
 
 
 let retorters = [];
-let reporterData = [{platformIndex:0,offset:400,behaviors:[reporterShootBehavior]},
-{platformIndex:1},
-{platformIndex:2,behaviors:[new cycleBevior(30,1500),new bounceBehaviour(2000,120),reporterShootBehavior]},
-{platformIndex:3},
+let reporterData = [
 {platformIndex:4},
 {platformIndex:18,offset:100},
 {platformIndex:19}];
