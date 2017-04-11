@@ -431,7 +431,7 @@ bearSheet.onload = function() {
     ctx.drawImage(bearSheet,0,0);
 }
 bearSheet.src = "images/bear.png";
-let bearData = [{platformIndex:0}];
+let bearData = [{platformIndex:17}];
                             
 let bears = [];
 
