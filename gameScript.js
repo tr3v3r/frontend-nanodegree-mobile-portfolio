@@ -806,7 +806,7 @@ function createBearSprites() {
 
     for(let i = 0; i < bearData.length;i++) {
 
-        bearArtist = new SpriteSheetArtist(bearSheet.cloneNode(false),bearCells);
+        bearArtist = new SpriteSheetArtist(bearSheet,bearCells);
         bear = new Sprite('bear',bearArtist,[paceBehavior,new cycleBevior(100,2500)]);
         bear.width =  bearCellsWidth;
         bear.height =  bearCellsHeight;        
