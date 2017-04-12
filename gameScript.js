@@ -2885,6 +2885,7 @@ loading.style.display = "none";
 startingScreen.style.visibility = "visible";
     start.onclick = function(event) {    
         startingScreen.style.visibility = "hidden";
+	canvas.style.visibility="visible";
         requestAF = requestAnimationFrame(animate);
         lastAnimationFrame += (+new Date() - begin);
         soundtrack.play();
