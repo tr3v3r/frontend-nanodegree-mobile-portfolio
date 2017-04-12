@@ -62,7 +62,9 @@ font-family: "8bit2";
 	margin: 100px auto;
 }
 
-
+#canvas{
+	visibility:hidden;
+}
 
 .fullTransitive {
 	position: absolute;
