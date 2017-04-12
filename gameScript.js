@@ -2850,7 +2850,13 @@ function checkKeys() {
 }
 
 let begin = +new Date();
+window.onblur = function() {
+    begin = +new Date(); 
+}
 
+window.onfocus = function() {
+   lastAnimationFrame += (+new Date() - begin);
+}
 function animate(now) {
 	fps =calculateFps(now);
 	draw(now);	
